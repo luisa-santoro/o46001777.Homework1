@@ -1,0 +1,288 @@
+
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+   }
+  
+  a.button{
+    border-radius: 0px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 15px 15px;
+    color: white;
+  }
+  
+  a.button:hover {
+    background-color: white;
+    color: #000000;
+  
+  }
+
+  .stile_desc{
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  body {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    font-style: normal;
+    text-align: left;
+  }
+
+ header {
+    color: hsl(0, 0%, 100%);
+    background-image: url("../img/mappa.png");
+    background-color: black;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: center;
+   width: 100%;
+   height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+
+  }
+  
+
+
+#links {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+  nav {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 20px;
+    /* bottom: 0px; */
+    left: 40%;
+    /* right: 0px; */
+    padding: 20px;
+    display: flex;
+    /* align-items: flex-end; */
+}
+
+    header nav #logo {
+      border: 1px solid white;
+      padding: 8px;
+      font-size: 40px;
+      position: absolute;
+      font-family: 'Work Sans', sans-serif;
+      top: 0px;
+      /* right: 100px; */
+      left: -470px;
+  
+    
+  }
+ 
+header h1{
+    color: #ffffff;
+    margin-left: 20%;
+    font-size: 40px;
+    font-family:'Work Sans', sans-serif;
+
+}
+
+#flex-container {
+    display: flex;
+   justify-content:space-around; 
+    padding: 10px;
+    flex-direction: row;    
+    flex-wrap: wrap;
+  }
+
+.flex-item{
+    color: #2f3745;
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+    font-style: normal;
+    font-weight: normal;
+    object-fit: cover;
+
+}
+
+  
+a.store_link{
+  color: #000000;
+  text-decoration: none;
+    padding: 12px;
+    border-color: rgb(50, 121, 252);
+    border-style:solid;
+    border-width:thin;
+    font-size: 23px;
+    line-height: 60px;
+    font-family: 'Work Sans', sans-serif;
+    object-fit: cover;
+
+  }
+
+a.store_link:hover {
+    color: #ffffff;
+    background-color: rgb(67,130,249);
+    cursor: pointer;
+  }
+
+form p{
+  font-family: 'Work Sans', sans-serif;
+  color: #000000;
+  font-size: 25px;
+}
+  
+  footer {
+    position: relative;
+    background-color: rgb(167, 167, 167);
+    color: rgba(255, 255, 255, .8);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+  }
+
+ 
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+
+  h1 {
+    display: none;
+  }
+
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }	
+
+  header nav #logo{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-left: 50%;
+    margin-top: 250px;
+    width: 200px;
+  }
+  
+    header {
+      height: 300px;
+      line-height: 1.2;
+    }
+  
+  header nav{
+    display: table-column;
+    padding: 10px;
+  }
+
+  #flex-container{
+
+      flex-direction: column;
+  }
+
+}
+
+p{
+  color: #000000;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+
+
+/* PARTE API SPOTIFY  */
+
+body {
+  color: #000000;
+  font-family:  'Work Sans', sans-serif;
+}
+
+#box_album  {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#box_album .album {
+  border-radius: 8px;
+  margin: 10px;
+  border: 1px solid rgb(67,130,249);
+  padding: 5px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#box_album img {
+  max-width: 100%;
+}
+#form_a,#form_h,#form_tre,#box_email{
+  display: block;
+  text-align: center;
+  color: #000000;
+  font-family: 'Work Sans', sans-serif;;
+}
+
+#form_a #album,#form_h #holidays_country,#form_tre #email_input{
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgb(67,130,249);
+  border-radius: 0;
+  background-position: 100% center;
+  font-size: 15px;
+
+}
+
+#form_a ::placeholder,#form_h ::placeholder, #form_tre ::placeholder{
+text-transform: uppercase;
+font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+
+
+
+#form_a :focus,#form_h :focus, #form_tre :focus{
+    outline: none;
+  }
+  
+#form_a #submit, #form_h #submit, #form_tre #submit{
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-width: thin;
+  background-color: transparent;
+  border-color:rgb(67,130,249);
+}
+
+
+
+#form_a #submit:hover, #form_h #submit:hover, #form_tre #submit:hover{
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-width: thin;
+  color: #ffffff;
+  background-color: rgb(67,130,249);
+
+}
